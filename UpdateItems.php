@@ -49,7 +49,7 @@ form {
 
 <?php
 	
-	$con=mysqli_connect("localhost","root","","project");
+	$con=mysqli_connect("localhost","root","demo","project");
 	$msg="";
 	
 	if(!$con){
@@ -104,7 +104,7 @@ form {
 
 <?php
 	
-	$con = mysqli_connect("localhost", "root", "", "project");
+	$con = mysqli_connect("localhost", "root", "demo", "project");
 	if(isset($_GET['update'])){
 		$update_id = ($_GET['update']);
 		

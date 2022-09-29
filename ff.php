@@ -173,7 +173,7 @@ nav .fa{
 
 <?php
 	
-	$con=mysqli_connect("localhost","root","","project");
+	$con=mysqli_connect("localhost","root","demo","project");
 	$msg="";
 	
 	$query = "SELECT * FROM product";

@@ -66,7 +66,7 @@ tr:hover {
 
 <?php
 	
-	$con=mysqli_connect("localhost","root","","project");
+	$con=mysqli_connect("localhost","root","demo","project");
 	$msg="";
 	
 	if(!$con){
@@ -87,7 +87,7 @@ tr:hover {
 
 <?php
 	
-	$con = mysqli_connect("localhost", "root", "", "project");
+	$con = mysqli_connect("localhost", "root", "demo", "project");
 	if(isset($_GET['update'])){
 		$update_id = ($_GET['update']);
 		
@@ -109,7 +109,7 @@ tr:hover {
 
 <?php
 	
-	$con = mysqli_connect("localhost", "root", "", "project");
+	$con = mysqli_connect("localhost", "root", "demo", "project");
 	if(isset($_GET['delete'])){
 		$id = ($_GET['delete']);
 		$sql = "DELETE FROM banking_order WHERE id='$id' ";
@@ -139,7 +139,7 @@ tr:hover {
 		<tbody>
 			<?php
 			
-			$con = mysqli_connect("localhost", "root", "", "project");
+			$con = mysqli_connect("localhost", "root", "demo", "project");
 			$sql = "SELECT * FROM banking_order";
 			
 			$run = mysqli_query($con,$sql);
@@ -178,7 +178,7 @@ tr:hover {
 </div>
 
 <?php
-$con = mysqli_connect("localhost", "root", "", "project");
+$con = mysqli_connect("localhost", "root", "demo", "project");
 // Check connection
 if (mysqli_connect_errno())
 {

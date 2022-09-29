@@ -1,6 +1,6 @@
 <?php
 
-$conn=mysqli_connect("localhost","root","","project");
+$conn=mysqli_connect("localhost","root","demo","project");
 	$msg="";
 	
 	$query = "SELECT * FROM product";

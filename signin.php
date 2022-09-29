@@ -10,7 +10,7 @@
 		<?php
 
 	
-	$con=mysqli_connect("localhost","root","","project");
+	$con=mysqli_connect("localhost","root","demo","project");
 	$name="";
 	$pass="";
 	$msg="";

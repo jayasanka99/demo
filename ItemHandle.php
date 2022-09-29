@@ -72,7 +72,7 @@ h2{
 <br/>
 <?php
 	
-	$con=mysqli_connect("localhost","root","","project");
+	$con=mysqli_connect("localhost","root","demo","project");
 	$msg="";
 	
 	if(!$con){
@@ -101,7 +101,7 @@ h2{
 	
 	<?php
 	
-	$con = mysqli_connect("localhost", "root", "", "project");
+	$con = mysqli_connect("localhost", "root", "demo", "project");
 	if(isset($_GET['update'])){
 		$update_id = ($_GET['update']);
 		
@@ -122,7 +122,7 @@ h2{
 
 <?php
 	
-	$con = mysqli_connect("localhost", "root", "", "project");
+	$con = mysqli_connect("localhost", "root", "demo", "project");
 	if(isset($_GET['del'])){
 		$del_id = ($_GET['del']);
 		$sql = "DELETE FROM product WHERE id='$del_id' ";
@@ -149,7 +149,7 @@ h2{
 		<tbody>
 			<?php
 			
-			$con = mysqli_connect("localhost", "root", "", "project");
+			$con = mysqli_connect("localhost", "root", "demo", "project");
 			$sql = "SELECT * FROM product";
 			
 			$run = mysqli_query($con,$sql);

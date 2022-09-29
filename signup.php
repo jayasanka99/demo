@@ -10,7 +10,7 @@
 		<?php
 	$sever="localhost";
 	$user="root";
-	$pass="";
+	$pass="demo";
 	$db="project";
 	
 	$con=mysqli_connect($sever,$user,$pass,$db);

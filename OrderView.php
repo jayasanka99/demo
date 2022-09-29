@@ -52,7 +52,7 @@ tr:hover {
 
 <?php
 	
-	$con=mysqli_connect("localhost","root","","project");
+	$con=mysqli_connect("localhost","root","demo","project");
 	$msg="";
 	
 	if(!$con){
@@ -73,7 +73,7 @@ tr:hover {
 
 <?php
 	
-	$con = mysqli_connect("localhost", "root", "", "project");
+	$con = mysqli_connect("localhost", "root", "demo", "project");
 	if(isset($_GET['update'])){
 		$update_id = ($_GET['update']);
 		
@@ -95,7 +95,7 @@ tr:hover {
 
 <?php
 	
-	$con = mysqli_connect("localhost", "root", "", "project");
+	$con = mysqli_connect("localhost", "root", "demo", "project");
 	
 	if(isset($_GET['delete'])){
 		$id = ($_GET['delete']);
@@ -125,7 +125,7 @@ tr:hover {
 		<tbody>
 			<?php
 			
-			$con = mysqli_connect("localhost", "root", "", "project");
+			$con = mysqli_connect("localhost", "root", "demo", "project");
 			$date = date('Y-m-d');
 			$sql = "SELECT * FROM cash_order";
 			
@@ -162,7 +162,7 @@ tr:hover {
 	</div>
 </div>
 <?php
-$con = mysqli_connect("localhost", "root", "", "project");
+$con = mysqli_connect("localhost", "root", "demo", "project");
 // Check connection
 if (mysqli_connect_errno())
 {
